@@ -13,29 +13,6 @@ func main() {
 		fmt.Println("your are too young")
 	}
 
-
-
-	// for loops
-	for i:=1; i<=10; i++ {
-		fmt.Println("the i is :" , i)
-	} 
-
-
-	// while loop
-	count := 20
-	for count >= 10 {
-		count --
-		if count == 18 {
-			continue
-		}
-		if count == 15 {
-			break
-		}
-
-		fmt.Println("the count is : ", count)	
-		fmt.Println("---------------------------")
-	}
-
 	// switch case
 	var day string
 	fmt.Println("Enter day : ")
@@ -57,55 +34,42 @@ func main() {
 	fmt.Println("-------------------------------------")
 	fmt.Println()
 
-	// functions
-	Great()
-	Great()
-
-	yearlySalary(12000)
-
-	fmt.Println(add(3,2.3))
-
-	var res float64
-	res = calc(4.3, 34)
-	fmt.Printf("The value of res is : %f", res)
-}
-
-func Great(){
-	fmt.Println("hello and welcome")
-}
 
 
-func yearlySalary(salary int64) {
-	fmt.Println("your yearly salary is: ", salary * 12)
-}
+	// for loops
+	for i:=1; i<=10; i++ {
+		fmt.Println("the i is :" , i)
+	} 
 
-func add(a float32, b float32) float32 {
-    return a + b
-}
+	// for loops
+	i := 0
+	for i < 10 {
+		fmt.Println("the i is :" , i)
+		i++
+	} 
 
-
-func calc(a float64, b float64) (result float64) {
-	var operation string
-	fmt.Println("What do you want : sum, divide, mines , multiply? ")
-	fmt.Scan(&operation)
-
-	switch operation {
-	case "sum":
-		result = a + b
-
-	case "divide":
-		result = a / b
-	
-	case "mines":
-		result = a - b
-
-	case "multiply":
-		result = a * b
-		
-	default:
-		fmt.Println("not defined")
-	
+	// for on list
+	lst := []int{4,5,6,7,3,2,1,0}
+	for idx, val := range lst {
+		println("idx is : ",idx, " and value is : ",val)
 	}
-	return result
- 
+
+	// while loop
+	count := 20
+	for count >= 10 {
+		count --
+		if count == 18 {
+			continue
+		}
+		if count == 15 {
+			break
+		}
+
+		fmt.Println("the count is : ", count)	
+		fmt.Println("---------------------------")
+	}
+
+
+
 }
+

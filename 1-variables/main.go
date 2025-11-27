@@ -7,6 +7,14 @@ import (
 
 const secondsInHour = 3600
 
+//struct
+type User struct {
+	ID       int
+	Name     string
+	Email    string
+	IsActive bool
+}
+
 func main() {
 	//var name string = value	
 	var city string
@@ -67,4 +75,26 @@ func main() {
 
 	fmt.Println(employeeName, jobPosition, employeeID, yearsofService, isFlltime, weekleyPay)
 
+
+
+    // Initialize using field names (recommended)
+    u1 := User{
+        ID:       1,
+        Name:     "Alice",
+        Email:    "alice@example.com",
+        IsActive: true,
+    }
+
+    // Initialize without field names (order matters!)
+    u2 := User{2, "Bob", "bob@example.com", false}
+
+	fmt.Println(u1)
+	fmt.Println(u2)
+
+	    // Access fields
+    fmt.Println("Name:", u1.Name)
+
+    // Modify fields
+    u1.IsActive = false
+    fmt.Println("Updated User:", u1)
 }
