@@ -8,7 +8,14 @@ import (
 const secondsInHour = 3600
 
 func main() {
+	//var name string = value	
+	var city string
+	var province string
+	city = "shiraz"
+	province = "fars"
 
+	fmt.Println("city and province", city, province)
+	
 	var age int = 21
 	var name string = "Iman"
 
@@ -35,6 +42,9 @@ func main() {
 
 	name1 := "saman"
 	fmt.Println("the name1 is: ", name1)
+
+	var i1, i2, i3 = 1,2,3
+	fmt.Println(i1,i2,i3)
 
 	// const data types
 	const (
